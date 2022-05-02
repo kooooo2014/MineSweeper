@@ -26,9 +26,7 @@ function calculate(map, height, width, bomb) {
             if(map[i][j] < 0) { //爆弾セル
                 map = calAround(map, i, j, height, width);
                 bomb --;
-                if(bomb <= 0) {
-                    return map
-                }
+                if(bomb <= 0) { return map }
             }
         }
     }
@@ -37,12 +35,12 @@ function calculate(map, height, width, bomb) {
 function calAround(map, x, y, h, w) {
     if(x-1 >= 0 && y-1 >= 0){map[x-1][y-1] ++;}
     if(x-1 >= 0)            {map[x-1][y] ++;}
-    if(x-1 >= 0 && y+1 < h) {map[x-1][y+1] ++;}
+    if(x-1 >= 0 && y+1 < w) {map[x-1][y+1] ++;}
     if(y-1 >= 0)            {map[x][y-1] ++;}
-    if(y+1 < h)             {map[x][y+1] ++;}
-    if(x+1 < w && y-1 >= 0) {map[x+1][y-1] ++;}
-    if(x+1 < w)             {map[x+1][y] ++;}
-    if(x+1 < w && y+1 < h)  {map[x+1][y+1] ++;}
+    if(y+1 < w)             {map[x][y+1] ++;}
+    if(x+1 < h && y-1 >= 0) {map[x+1][y-1] ++;}
+    if(x+1 < h)             {map[x+1][y] ++;}
+    if(x+1 < h && y+1 < w)  {map[x+1][y+1] ++;}
 
     return map;
 }

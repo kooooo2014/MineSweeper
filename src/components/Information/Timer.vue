@@ -53,7 +53,7 @@ export default {
                 this.min ++
             } else {
                 this.sec ++
-            }//99m59s超えたら表示バグる
+            }
 
             this.min = ('0' + this.min).slice(-2)
             this.sec = ('0' + this.sec).slice(-2)

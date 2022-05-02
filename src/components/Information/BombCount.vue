@@ -18,7 +18,7 @@ export default {
 .bomb-count {
     width: 100px;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0 10px 0 87px;
     border-radius: 5px;
     background-color: #FBF8F1;
     display: flex;

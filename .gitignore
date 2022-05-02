@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/src/store
+/src/router
 
 
 # local env files

@@ -5,7 +5,6 @@
         </transition>
         <div class="panel unopen" :class="flag" v-show="!open"></div>
     </div>
-    
 </template>
 
 <script>
