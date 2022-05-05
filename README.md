@@ -8,11 +8,11 @@ Vue.jsで作ったマインスイーパーゲームです。
 # 操作方法
 マスを左クリックすると開きます。
 
-![start画面](./src/assets/capture.JPG)
+<img src="./src/assets/capture.JPG" width="40%">
 
 マスを右クリックすると、爆弾フラグ（爆弾の場所を覚えておくため）を建てられます。
 
-![フラグ](./src/assets/capture2.JPG)
+<img src="./src/assets/capture2.JPG" width="40%">
 
 爆弾マス以外の全マスを開けることができれば、GameClearとなります。
 
@@ -25,6 +25,6 @@ Vue.jsで作ったマインスイーパーゲームです。
 
 難易度変更は右上のタブで可能です。
 
-![難易度変更](./src/assets/capture3.JPG)
+<img src="./src/assets/capture3.JPG" width="40%">
 
 
